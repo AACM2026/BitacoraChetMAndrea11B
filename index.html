@@ -3,101 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitácora Tecnología Chet </title>
-    <link rel="icon" type="imagen/png" href="recursos/img/LG Capou1.png">
+    <title>Bitácora Tecnología Chet</title>
+    <link rel="icon" type="image/png" href="recursos/img/LG Capou1.png">
     <style>
-        html, body{
+        html, body {
             height: 100%;
             margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        body{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-        header{
-            padding: 20px;
-            background-color: rgb(206, 117, 167);
-        }
-        main{
-            flex: 1;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        footer{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 50px;
-            border-top: 1px solid rgb(223, 172, 203);
-            background-color: rgb(222, 214, 186);
-        }
-        footer image {
-            transition: transform 0.3s ease;
-        }
-        footer image: :hover {
-            transform: scale(1.2)
-        }
-        @media(max-width:600px){
-            footer{
-                flex-direction: column;
-                gap: 15px;
-                padding: 20px;
-            }
-        }
-        html, body{
-            height: 100%;
-            margin: 50;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f9;
         }
-        body{
+        body {
             display: flex;
             flex-direction: column;
             text-align: center;
         }
-        header{
+        header {
             padding: 20px;
             background-color: rgb(206, 117, 167);
             color: white;
         }
         h1 {
             text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe;
+            margin: 0;
         }
-
-        main{
+        main {
             flex: 1;
             padding: 40px 20px;
-            max-width: 800px; /
+            max-width: 800px;
             margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
         }
-
+        h4 {
+            color: #555;
+            margin-bottom: 30px;
+        }
         .semana {
             background-color: white;
             border-radius: 20px;
             padding: 25px;
-            margin: 20px auto;
-            max-width: 650;
-            margin-bottom: 35px;
+            margin: 0 auto 35px auto;
+            max-width: 650px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border: 2px solid rgb(206, 117, 167);
             text-align: left;
             transition: transform 0.3s;
         }
-
         .semana:hover {
             transform: translateY(-5px);
         }
-
         .semana h2 {
             margin-top: 0;
             color: #b368d1;
             border-bottom: 2px solid pink;
             display: inline-block;
+            margin-bottom: 15px;
         }
-        footer{
+        .contenedor-recurso {
+            margin: 15px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        video, iframe {
+            display: block;
+            border: none;
+            background-color: #000;
+        }
+        footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -105,17 +78,14 @@
             border-top: 1px solid rgb(223, 172, 203);
             background-color: rgb(222, 214, 186);
         }
-
         footer img {
             transition: transform 0.3s ease;
         }
-
         footer img:hover {
             transform: scale(1.1);
         }
-
         @media(max-width:600px){
-            footer{
+            footer {
                 flex-direction: column;
                 gap: 15px;
                 padding: 20px;
@@ -124,34 +94,60 @@
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Encabezado de mi página WEB</h1>
+        <h1>Bitácora de Tecnología</h1>
     </header>
+
     <main>
-        <h4>Contenido de mi página WEB</h4>
-    </main>
-<div class="semana">
-    <h2>Semana 1: Introducción</h2>
-    <p>Hoy aprendimos los conceptos básicos de HTML y cómo estructurar una página web usando etiquetas semánticas.</p>
-    <div class="contenedor-pdf">
-        <iframe src="recursos/Introducción Arduino Chet.pdf" width="100%" height="500px"></iframe>
-    </div>
-    <p><a href="recursos/Introducción Arduino Chet.pdf" target="_blank" style="color: #b368d1; font-size: 0.8em;">Ver en pantalla completa 📄</a></p>
-</div>
+        <h4>Evidencias de Aprendizaje</h4>
 
         <div class="semana">
-            <div class="visor-pdf">
-            <iframe src="recursos/Video arduino.mp4" width="100%" height="500px"></iframe>
+            <h2>Semana 1: Introducción</h2>
+            <p>Hoy aprendimos los conceptos básicos de HTML y cómo estructurar una página web usando etiquetas semánticas.</p>
+            <div class="contenedor-recurso">
+                <iframe src="recursos/Introducción Arduino Chet.pdf" width="100%" height="450px"></iframe>
+            </div>
+            <p><a href="recursos/Introducción Arduino Chet.pdf" target="_blank" style="color: #b368d1; font-size: 0.85em; text-decoration: none; font-weight: bold;">Ver en pantalla completa 📄</a></p>
+        </div>
+
+        <div class="semana">
             <h2>Semana 2: Estilos CSS</h2>
             <p>En esta sesión aplicamos colores, sombras y efectos de transición para mejorar la experiencia del usuario.</p>
+            <div class="contenedor-recurso">
+                </div>
         </div>
-            </main>
-</div>
+
+        <div class="semana">
+            <h2>Semana 3: 1er circuito (Parte A)</h2>
+            <p>Diseño y simulación del primer circuito automatizado interactivo utilizando la plataforma de desarrollo.</p>
+            <div class="contenedor-recurso">
+                <video src="recursos/video_circuito1.mp4" width="100%" height="360px" controls></video>
+            </div>
+        </div>        
+
+        <div class="semana">
+            <h2>Semana 4: 1er circuito (Parte B)</h2>
+            <p>Continuación del diseño, pruebas de errores y fase final del primer circuito interactivo.</p>
+            <div class="contenedor-recurso">
+                <video src="recursos/video_circuito1_b.mp4" width="100%" height="360px" controls></video>
+            </div>
+        </div>
+
+        <div class="semana">
+            <h2>Semana 5: 2do circuito</h2>
+            <p>Optimización de conexiones y programación del segundo circuito, añadiendo nuevos componentes de control.</p>
+            <div class="contenedor-recurso">
+                <video src="recursos/video_circuito2.mp4" width="100%" height="360px" controls></video>
+            </div>
+        </div>
+
+    </main>
 
     <footer>
         <span>2026 @Chettos</span>
-   <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="" width="350px" height="200px">
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo Capouilliez" width="175px" height="100px">
     </footer>
-   <input type="text" placeholder="Nombre del proyecto">
+
 </body>
 </html>
